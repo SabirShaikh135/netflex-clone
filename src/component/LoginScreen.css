@@ -1,0 +1,180 @@
+.LoginScreen{
+    position: relative;
+    height: 100%;
+    background: url("https://www.logitheque.com/en/wp-content/uploads/sites/6/2019/07/netflix-image.jpg")
+    center no-repeat;
+    background-size: cover;
+
+}
+
+.LoginScreen_gradient{
+    /* width: 100%; */
+    z-index: 1;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.04);
+    background-image: linear-gradient(
+        to top,
+        rgba(0, 0, 0, 0.08) 0,
+        rgba(0, 0, 0, 0) 60%,
+        rgba(0, 0, 0, 0.08)100%
+     );
+    
+}
+
+.LoginScreen_logo{
+    position: fixed;
+    top: 10px;
+    left: 0;
+    width: 80px;
+    object-fit: contain;
+    padding-left: 20px;
+    cursor: pointer;
+}
+
+.LoginScreen_button{
+    position: fixed;
+    right: 20px;
+    top: 20px;
+    padding: 10px 20px;
+    font-size: 1rem;
+    color: #fff;
+    background-color: #e50914;
+    cursor: pointer;
+    border: none;
+    font-weight: 600;
+}
+
+
+.LoginScreen_body{
+    position: absolute;
+    top: 30%;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    z-index: 1;
+    color: #fff;
+    padding: 20px;
+    left: 0;
+    right: 0;
+}
+
+.LoginScreen_body > h1{
+    font-size: 3.125rem;
+    margin-bottom: 20px;
+    
+}
+
+.LoginScreen_body > h2{
+    font-size: 2rem;
+    margin-bottom: 30px;
+    font-weight: 400;
+}
+
+.LoginScreen_body > h3{
+    font-size: 1.3rem;
+    font-weight: 400;
+}
+
+.LoginScreen_input{
+    margin: 20px;
+}
+
+.LoginScreen_input >form >input{
+    padding: 15px;
+    outline-width: 0;
+    height: 40%;
+    width: 50%;
+    border: none;
+    max-width: 600px;
+
+}
+
+
+.LoginScreen_getstarted{
+    padding: 16px 20px;
+    font-style: 1rem;
+    color: #fff;
+    background: #e50914;
+    border: none;
+    font-weight: 600;
+    cursor: pointer;
+    margin-top: 10px;
+
+}
+
+
+@media only screen and (max-width: 480px) {
+    .HomeScreen{
+        background-color: black;
+        height: 100%;
+        width: 100%;
+    }
+
+    .LoginScreen_getstarted{
+        display: none;
+    }
+    .LoginScreen_input{
+        display: none;
+    }
+    .LoginScreen_input >form >input{
+        display: none;
+    }
+
+    .LoginScreen_body > h1{
+        font-size: 2.8rem;
+        margin-bottom: 20px;
+        
+    }
+    
+    .LoginScreen_body > h2{
+        font-size: 1.8rem;
+        margin-bottom: 30px;
+        font-weight: 400;
+    }
+    
+    .LoginScreen_body > h3{
+        font-size: 1rem;
+        font-weight: 400;
+    }
+
+       
+}
+
+@media only screen and (max-width: 768px) {
+  
+}
+
+@media only screen and (max-width: 360px) {
+    .LoginScreen{
+        position: relative;
+        height: 100%;
+        background: url("https://www.logitheque.com/en/wp-content/uploads/sites/6/2019/07/netflix-image.jpg")
+        center no-repeat;
+        background-size: cover;
+    
+    }
+
+    .LoginScreen_body{
+        position: absolute;
+        top: 10%;
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+        z-index: 1;
+        color: #fff;
+        padding: 20px;
+        left: 0;
+        right: 0;
+    }
+
+    .LoginScreen_getstarted{
+        display: none;
+    }
+    .LoginScreen_input{
+        display: none;
+    }
+    .LoginScreen_input >form >input{
+        display: none;
+    }
+    
+}

@@ -1,0 +1,113 @@
+.ProfileScreen{
+    /* height: 100vh; */
+    height: 100vh;
+    color: white;
+    background-color: black;
+}
+
+.ProfileScreen_body{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 8%;
+    max-width: 800px;
+}
+
+.ProfileScreen_body >h1 {
+    font-size: 60px;
+    font-weight: 400;
+    border-bottom: 1px solid white;
+    margin-bottom: 20px;
+}
+.ProfileScreen_info{
+    display: flex;
+}
+
+.ProfileScreen_info > img{
+height: 100px;
+}
+
+.ProfileScreen_details{
+    margin-left: 25px;
+    flex: 1;
+    color: white;
+}
+
+.ProfileScreen_details > h2{
+  background-color: #e50914;
+  padding: 15px;
+  font-size: 1.2rem;
+  padding-left: 20px;
+}
+
+.ProfileScreen_signout{
+    padding: 10px 20px;
+    font-size: 1rem;
+    margin-top: 5%;
+    width: 100%;
+    color: white;
+    background-color: #e50914;
+    font-weight: 600;
+    border: none;
+    cursor: pointer;
+}
+
+.ProfileScreen_plans >h3{
+    border-bottom:  1px solid white;
+    padding-bottom: 10px;
+}
+
+.ProfileScreen_plans{
+    background-color: rgb(43, 33, 33);
+}
+
+@media only screen and (max-width: 480px) {
+    .ProfileScreen_info > img{
+        display: none;
+        }
+
+        .ProfileScreen_body{
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+            padding-top: 35%;
+            max-width: 800px;
+           align-items: center;
+        }
+
+        .ProfileScreen_body >h1 {
+            font-size: 30px;
+            font-weight: 400;
+            border-bottom: 1px solid white;
+            margin-bottom: 20px;
+        }
+       
+        .ProfileScreen_body >h1 {
+            display: none;
+        }
+}
+
+@media only screen and (max-width: 768px) {
+    .ProfileScreen_info > img{
+        display: none;
+        }
+
+        .ProfileScreen_body{
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+            padding-top: 25%;
+            max-width: 800px;
+           /* align-items: center; */
+        }
+
+        .ProfileScreen_body >h1 {
+            font-size: 30px;
+            font-weight: 400;
+            border-bottom: 1px solid white;
+            margin-bottom: 20px;
+        }
+    
+}
